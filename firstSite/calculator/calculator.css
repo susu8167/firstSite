@@ -1,0 +1,234 @@
+
+body {
+    background: rgb(29, 29, 29);
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#calculatorBorder {
+    border: 30px solid rgb(9, 82, 241);
+    background: rgb(9, 82, 241);
+    border-radius: 20px;
+    margin: 0;
+}
+
+#calculator {
+    background: black;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    max-width: 370px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "result result result result"
+    "result result result result"
+    "AC sign percent divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero decimal equal";
+}
+
+#changeDes {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+#changeColor {
+    display: inline-block;
+    border: 10px solid rgb(9, 82, 241);
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(104, 182, 255);
+}
+
+#changeColor:hover {
+    transform: translate(1px,-1px);
+}
+
+i {
+    font-size: 27px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.op {
+    background: rgb(255, 166, 0);
+}
+
+.sp {
+    background: rgb(163, 163, 163);
+    color: black;
+}
+
+.num {
+    background: rgb(80, 80, 80);
+}
+
+.op:active {
+    background: whitesmoke;
+    color: black;
+}
+
+.sp:active {
+    background: rgb(163, 163, 163);
+}
+
+.num:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.resultBG {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: result;
+    height: 200px;
+    max-width: 370px;
+    font-size: 79px;
+    background: rgb(167, 167, 167);
+    border-radius: 3%;
+}
+
+#result {
+    display: inline-block;
+    margin-right: 18px;
+    color: black;
+}
+
+#back {
+    color: rgb(212, 141, 8);
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    background: rgb(250, 205, 123);
+    border: 10px solid rgb(250, 205, 123);
+    padding: 7px 15px 0 15px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+#next {
+    color: rgb(212, 141, 8);
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    background: rgb(250, 205, 123);
+    border: 10px solid rgb(250, 205, 123);
+    padding: 7px 15px 0 15px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+#back:hover, #next:hover {
+    border: 10px red solid;
+    transform: translate(1px,-1px);
+}
+
+#AC {
+    grid-area: AC;
+}
+
+#sign {
+    grid-area: sign;
+}
+
+#percent {
+    grid-area: percent;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#zero {
+    grid-area: zero;
+    border-radius: 3em;
+    width: 180px;
+}
+
+#zero div{
+    position: relative;
+    right: 25%;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#equal {
+    grid-area: equal;
+}
+
