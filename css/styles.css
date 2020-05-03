@@ -114,15 +114,16 @@ body {
     background: white; }
     .btn--white::after {
       background: white; }
+  .btn--fade-in {
+    animation: fadeIn 3s 2s ease-out;
+    animation-fill-mode: backwards;
+    transition: all 0.1s ease-out; }
   .btn:link, .btn:visited {
     display: inline-block;
     padding: 1.5rem 2.5rem 1.5rem 2.5rem;
     border-radius: 10rem;
     font-size: 1.6rem;
-    position: relative;
-    animation: fadeIn 3s 2s ease-out;
-    animation-fill-mode: backwards;
-    transition: all 0.1s ease-out; }
+    position: relative; }
   .btn:hover {
     transform: translate(0, -0.5rem);
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5); }
