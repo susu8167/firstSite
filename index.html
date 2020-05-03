@@ -5,50 +5,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../firstSite/calculator/fontawesome-free-5.13.0-web/css/all.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
 
-        <nav>
-            <div class="logo"><i class="fas fa-apple-alt"></i> <span class="logo--text">Melon</span></div>
-            <ul class="nav-links">
-                <li><a class="nav-link--instagram" href="https://www.instagram.com/melon_ishere_/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a class="nav-link--facebook" href="https://www.facebook.com/melononsky/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-            </ul>
+        <nav class="nav">
+            <div class="nav__logo logo"><i class="fas fa-apple-alt"></i> Melon</div>
+            <a class="default-anchor nav__link" href="https://www.instagram.com/melon_ishere_/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="default-anchor nav__link" href="https://www.facebook.com/melononsky/" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </nav>
 
-        <div class="background">
-
+        <div class="background-flower">
         </div>
 
-        <header class="message-container">
-            <div class="message">
-                <h1 class="title">Landing Page</h1>
-                <p class="description">My first and only published page</p>
+        <div class="heading">
+            <div class="heading__message">
+                <h1 class="heading__message--title">Landing Page</h1>
+                <p class="heading__message--description">My first and only published page</p>
                 <hr>
-                <div class="button-container"><a href="#bio">Start our journey</a></div>
+                <div class="u-text-center">
+                    <a href="#bio" class="default-anchor btn btn--white">Start our journey</a>
+                </div>
             </div>
-        </header>
+        </div>
 
-        <main>
-            <div id="bio" class="bio">
+        <main class="bio">
+            <div id="bio" class="bio__heading">
                 <p>Bio coming soon<br>.<br>.<br>.</p>
+            </div>
+            <div class="bio__description">
                 <p><i class="fas fa-arrow-down"></i>But make sure to check out cool features(and song)<i class="fas fa-arrow-down"></i></p>
             </div>
-            <div class="video-container">
+            <div class="video">
                 <iframe width="500" height="380"
                 src="https://www.youtube.com/embed/MVtndMg5Pfs">
                 </iframe>
             </div>
-            <div class="app-container">
-                <ul>
-                    <li><a class="app app--calculator" href="calculator/calculator.html">Calculator</a></li>
-                    <li><a class="app app--tictactoe" href="xo/xo.html">Tic Tac Toe</a></li>
-                </ul>
+            <div class="u-margin-bottom-medium u-margin-top-medium">
+                <a class="default-anchor btn btn--white u-margin-left-right-small" href="calculator/calculator.html">Calculator</a>
+                <a class="default-anchor btn btn--white u-margin-left-right-small" href="xo/xo.html">Tic Tac Toe</a>
             </div>
         </main>
 
-        <footer>
+        <footer class="footer">
             <div>Copyright &copy; Suphakan Sukwong. All Rights Reserved.</div>
         </footer>
 
