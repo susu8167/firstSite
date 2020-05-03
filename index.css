@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    margin: 0 50px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: -0.8rem;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links li {
+    margin-right: 6rem;
+    font-size: 4rem;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 67, 167, 0), rgba(112, 234, 255, 0.534)), url(flower2.JPG);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.message-container {
+    height: 100vh;
+    position: relative;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title {
+    display: inline-block;
+    letter-spacing: .4rem;
+    color: rgb(221, 151, 1);
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.8),
+                0px 0px 5px rgba(0,0,0,0.5),
+                0px 0px 20px rgba(0,0,0,0.3);
+    font-size: 8rem;
+    font-weight: 600;
+    animation: moveInLeft 2s ease-out;
+}
+
+.description {
+    color: #f5f5f5;
+    letter-spacing: .6rem;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    animation: moveInRight 2s ease-out;
+}
+
+
+hr {
+    margin: 2rem 0 3rem 0;
+    box-shadow: 0px .2rem .3rem rgba(0,0,0,0.2),
+    0px .2rem 4rem rgb(0,0,0);
+    animation: moveInUp 1s 1s ease-out backwards;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container a {
+    display: inline-block;
+    color: rgb(117, 117, 117);
+    background: white;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    position: relative;
+    animation: fadeIn 3s 2s ease-out;
+    animation-fill-mode: backwards;
+    transition: all 0.1s ease-out;
+}
+
+.button-container a:hover {
+    transform: translate(0,-.5rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.button-container a:active {
+    transform: translate(0,-.2rem);
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.5);
+}
+
+.button-container a::after {
+    content: "";
+    display: inline-block;
+    background: white;
+    border-radius: 10rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.button-container a:hover::after {
+    transform: scaleX(1.4) scaleY(1.7);
+    opacity: 0;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.app-container {
+    text-align: center;
+    margin: 10rem auto;
+}
+
+.app-container .app {
+    position: relative;
+    padding: 0 5rem;
+    font-size: 3rem;
+    color: rgb(117,117,117);
+    background: rgb(255, 255, 255);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    transition: all 0.1s;
+}
+
+.app-container .app::after {
+    content: "";
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 10rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.app-container .app:hover {
+    transform: translate(0,-.5rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.app-container .app:active {
+    transform: translate(0,-.2rem);
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.5);
+}
+
+.app-container .app:hover::after {
+    transform: scaleX(1.4) scaleY(1.7);
+    opacity: 0;
+}
+
+.bio {
+    font-size: 3.2rem;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 6rem 0;
+    background: rgb(0, 26, 255);
+}
