@@ -48,9 +48,7 @@ window.onload = function(){
 
 function drawCanvas(){
     canvasContext.fillStyle = 'black';
-    canvasContext.width = window.innerWidth;
-    canvasContext.height = window.innerHeight;
-    canvasContext.fillRect(0,0,window.innerWidth,window.innerHeight);
+    canvasContext.fillRect(0,0,document.body.clientWidth,document.body.clientHeight);
 }
 
 function drawBall(x,y,radius,color){

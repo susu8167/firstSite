@@ -16,6 +16,18 @@
         transition: all 0.1s ease-out;
     }
 
+    &--top-left{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    &--top-right{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+
     &:link, &:visited {
         display: inline-block;
         padding: 1.5rem 2.5rem 1.5rem 2.5rem;
