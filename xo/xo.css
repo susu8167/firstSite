@@ -1,6 +1,7 @@
 body {
     background: gray;
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -48,25 +49,26 @@ nav {
 }
 
 h1 {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     font-size: 5em;
     margin: 0;
+    position: relative;
 }
 
-a.home, a.back {
+
+.home {
     font-size: 30px;
     text-decoration: none;
-    background: rgb(150,190,250);
+    background: rgb(150, 190, 250);
     color: white;
     padding: 0 10px 0 10px;
     border: 10px solid rgb(20,150,250);
     border-radius: 100px;
-}
-
-a {
-    font-size: 40px;
-    margin: 20px;
+    margin: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
 }
 
 table {

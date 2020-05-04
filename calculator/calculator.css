@@ -125,7 +125,9 @@ i {
     background: rgb(250, 205, 123);
     border: 10px solid rgb(250, 205, 123);
     padding: 7px 15px 0 15px;
-    border-radius: 25%;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
