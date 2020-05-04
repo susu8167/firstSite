@@ -108,7 +108,8 @@ body {
     font-size: 3.2rem; }
 
 .btn {
-  text-align: center; }
+  text-align: center;
+  transition: all 0.15s ease-out; }
   .btn--white {
     color: #757575;
     background: white; }
@@ -116,8 +117,7 @@ body {
       background: white; }
   .btn--fade-in {
     animation: fadeIn 3s 2s ease-out;
-    animation-fill-mode: backwards;
-    transition: all 0.1s ease-out; }
+    animation-fill-mode: backwards; }
   .btn--top-left {
     position: absolute;
     top: 5%;
