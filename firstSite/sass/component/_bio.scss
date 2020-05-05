@@ -1,13 +1,37 @@
 .bio {
     text-align: center;
-    padding-top: 20rem;
+    background-color: white;
+    border-radius: 10px;
 
     &__heading {
-        padding-top: 8rem;
         font-size: 6rem;
+
+        &--renovation {
+            font-size: 5rem;
+            background-color: white;
+            padding: 4rem;
+            text-transform: uppercase;
+            position: absolute;
+            border-radius: 1rem;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-10deg);
+        }
     }
 
     &__description {
-        font-size: 3.2rem;
+        font-size: 2rem;
+        padding: 4rem;
+    }
+
+    &__img {
+        position: relative;
+        & img {
+            position: absolute;
+            top: 6rem;
+            right: 1rem;
+            width: 80%;
+            object-fit: contain;
+        }
     }
 }
