@@ -1,0 +1,21 @@
+.row {
+    max-width: 900px;
+    margin: 0 auto;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    [class^="col-"] {
+        float: left;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+
+    & .col-1-of-2 {
+        width: calc((100% - 3rem)/2);
+    }
+}

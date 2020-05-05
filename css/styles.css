@@ -67,6 +67,11 @@ body {
 .u-padding-top-big {
   padding-top: 8rem; }
 
+.u-padding-top-huge {
+  padding-top: 25rem; }
+
+\
+
 .u-padding-bottom-small {
   padding-bottom: 2rem; }
 
@@ -85,6 +90,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.u-margin-top-huge {
+  margin-top: 25rem; }
+
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
@@ -94,18 +102,43 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 25rem; }
+
 .u-margin-left-right-small {
   margin-left: 2rem;
   margin-right: 2rem; }
 
+.u-blur {
+  filter: blur(10px); }
+
 .bio {
   text-align: center;
-  padding-top: 20rem; }
+  background-color: white;
+  border-radius: 10px; }
   .bio__heading {
-    padding-top: 8rem;
     font-size: 6rem; }
+    .bio__heading--renovation {
+      font-size: 5rem;
+      background-color: white;
+      padding: 4rem;
+      text-transform: uppercase;
+      position: absolute;
+      border-radius: 1rem;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-10deg); }
   .bio__description {
-    font-size: 3.2rem; }
+    font-size: 2rem;
+    padding: 4rem; }
+  .bio__img {
+    position: relative; }
+    .bio__img img {
+      position: absolute;
+      top: 6rem;
+      right: 1rem;
+      width: 80%;
+      object-fit: contain; }
 
 .btn {
   text-align: center;
@@ -185,6 +218,20 @@ hr {
   text-align: center;
   margin-top: 5rem; }
 
+.row {
+  max-width: 900px;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 3rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 3rem)/2); }
+
 .background-flower {
   position: fixed;
   top: 0;
@@ -217,6 +264,10 @@ hr {
       font-size: 2.4rem;
       margin-bottom: 2rem;
       animation: moveInRight 2s ease-out; }
+
+.section-bio {
+  margin-top: 30rem;
+  position: relative; }
 
 .footer {
   color: white;
