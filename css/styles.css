@@ -70,8 +70,6 @@ body {
 .u-padding-top-huge {
   padding-top: 25rem; }
 
-\
-
 .u-padding-bottom-small {
   padding-bottom: 2rem; }
 
@@ -113,7 +111,6 @@ body {
   filter: blur(10px); }
 
 .bio {
-  text-align: center;
   background-color: white;
   border-radius: 10px; }
   .bio__heading {
