@@ -125,7 +125,7 @@ body {
       text-transform: uppercase;
       position: absolute;
       border-radius: 1rem;
-      top: 55%;
+      top: 45%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(-10deg); }
   .bio__description {
