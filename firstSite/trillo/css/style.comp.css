@@ -544,19 +544,16 @@ header {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(3px);
-  z-index: 100; }
-  .big-1__photo-box, .big-2__photo-box, .big-3__photo-box {
+  z-index: 100;
+  transition: all .3s; }
+  .big-1__photo, .big-2__photo, .big-3__photo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 3px;
     width: 80%;
-    height: 60%; }
-  .big-1__photo, .big-2__photo, .big-3__photo {
-    width: 100%;
-    object-fit: contain;
-    box-shadow: var(--shadow-dark); }
+    height: 60%;
+    transform: translate(-50%, -50%);
+    object-fit: contain; }
   .big-1:target, .big-2:target, .big-3:target {
     opacity: 1;
     visibility: visible; }
