@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d firstSite"
+    "deploy": "gh-pages -d firstSite",
+    "compile:sass": "node-sass firstSite/sass/main.scss firstSite/css/styles.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.0"
   }
 }
